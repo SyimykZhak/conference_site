@@ -1,0 +1,39 @@
+{% load static %}
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- logo -->
+            <div class="site-branding">
+                <a class="logo" href="{% url 'main' %}">
+                    
+                    <!-- logo image  -->
+                    <img src="{% static '/assets/logo.png' %}" alt="Logo">
+
+                    Конференции Ош 
+                </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- navigation menu -->
+                <li class="active"><a data-scroll href="#about">О нас</a></li>
+                <li><a data-scroll href="#speakers">Спикеры</a></li>              
+                <li><a data-scroll href="#schedule">Расписание</a></li>                  
+                <li><a data-scroll href="#partner">Партнеры</a></li>                  
+                <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+            
+            </ul>
+        </div>
+    </div><!-- /.container -->
+</nav>
